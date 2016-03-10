@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="3dp"
+    android:background="#FFECECEC"
+    android:orientation="vertical" >
+
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#FF272D3D"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" >
+
+            <ImageButton
+                android:id="@+id/feedbackcancelbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/back"
+                android:onClick="cancel"
+                android:src="@drawable/back" />
+
+        </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:gravity="right"
+	        android:layout_height="wrap_content" >
+	
+	        <ImageButton
+	            android:id="@+id/savefeedbackbutton"
+	            android:layout_width="43dp"
+	            android:layout_height="50dp"
+	            android:background="#00FFFFFF"
+	            android:onClick="addFeedback"
+	            android:src="@drawable/send"
+	            android:text="Добавить" />
+
+	    </LinearLayout>
+	        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/feedbackLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сообщение отправляется ..."
+            android:layout_marginLeft="3dp"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FF000000" />
+
+        <ProgressBar
+            android:id="@+id/feedbackProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:indeterminate="true"
+            android:indeterminateBehavior="cycle"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp" />
+
+        <RatingBar
+            android:id="@+id/feedbackrating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="Мы ценим ваше мнение"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FF575757" />
+
+        <EditText
+            android:id="@+id/feedbackowner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF5F5F5"
+            android:ems="10"
+            android:hint="Ваше имя"
+            android:inputType="textPersonName"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingTop="5dip"
+            android:textColor="#FFB2B2B2" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/feedbacktext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="Ваш комментарий"
+            android:inputType="textMultiLine"
+            android:lines="5" />
+
+    </LinearLayout>
+
+</LinearLayout>

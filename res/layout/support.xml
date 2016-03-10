@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFECECEC"
+    android:orientation="vertical" >
+
+
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#FF272D3D"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+        	android:layout_weight="0.5"
+        	android:layout_height="wrap_content">
+
+	        <ImageButton
+	            android:id="@+id/supportcancelbutton"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/back"
+	            android:onClick="cancel"
+	            android:src="@drawable/back" />
+
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:gravity="right"
+	        android:layout_height="wrap_content" >
+	
+	        <ImageButton
+	            android:onClick="addSupport"
+	            android:background="#00FFFFFF"
+	            android:src="@drawable/send"
+	            android:id="@+id/savesupportbutton"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Добавить" />
+	    </LinearLayout>
+	        
+    </LinearLayout>
+
+	<TextView
+	    android:id="@+id/profileCity"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:textColor="#FF575757"
+	    android:paddingTop="10dip"
+	    android:paddingBottom="10dip"
+	    android:text="Мы ценим ваше мнение"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/supportowner"
+        android:background="#FFF5F5F5"
+        android:textColor="#FFB2B2B2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+        android:hint="Ваш e-mail / телефон"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/supporttext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="Ваш комментарий"
+        android:inputType="textMultiLine"
+        android:lines="5" />
+
+</LinearLayout>

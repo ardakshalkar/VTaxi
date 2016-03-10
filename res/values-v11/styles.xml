@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light" />
+<style name="taxiRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/suitable_stars</item>
+        <item name="android:minHeight">17dip</item>
+        <item name="android:maxHeight">17dip</item>
+    </style>
+</resources>

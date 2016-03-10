@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bkg"
+    android:orientation="vertical" >
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="7dp"
+	        android:layout_marginRight="7dp"
+	        android:layout_marginTop="7dp"
+	        android:background="@drawable/gradientrounded"
+	        android:orientation="vertical" >
+
+	        <TextView
+	            android:id="@+id/taxiprofiletitle"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dp"
+	            android:text="Large Text"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textColor="#000000" />
+			
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content">
+	            
+		        <ImageView
+		            android:id="@+id/imageView1"
+		            android:layout_marginLeft="15dp"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/taxisign" />
+
+		        <TextView
+				    android:id="@+id/profile_info"
+				    android:textColor="#000000"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:paddingLeft="5dp"
+				    android:paddingRight="5dp"
+				    android:text="Тарифов не найдено"
+				    android:textAppearance="?android:attr/textAppearanceSmall" />
+	        </LinearLayout>
+	        
+	        <Button
+	            android:id="@+id/phonenumber"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="4dp"
+	            android:layout_marginLeft="15dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="5dp"
+	            android:background="@drawable/button"
+	            android:paddingBottom="5dp"
+	            android:paddingTop="5dp"
+	            android:text="Button"
+	            android:textColor="#ffffff" />
+
+	        <ProgressBar
+	            android:id="@+id/loadFeedbacks"
+	            style="?android:attr/progressBarStyleLarge"
+	            android:layout_width="wrap_content"
+	            android:layout_height="0dp"
+	            android:layout_gravity="center"
+	            android:visibility="invisible" />
+
+	    </LinearLayout>
+
+		<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="7dp"
+	        android:layout_marginRight="7dp"
+	        android:layout_marginTop="7dp"
+	        android:background="@drawable/gradientrounded"
+	        android:orientation="horizontal" >
+
+	        <Button
+	            android:id="@+id/feedbacksnum"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dp"
+	            android:background="#0000"
+	            android:onClick="showFeedbacks"
+	            android:text="Отзывов (0)"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textColor="#000000" />
+
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content">
+				<LinearLayout 
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content">
+
+					<RatingBar
+					    android:id="@+id/profileratingindicator"
+					    style="?android:attr/ratingBarStyleSmall"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_gravity="center_vertical|fill_vertical|left"
+					    android:isIndicator="true"
+					    android:numStars="5"
+					    android:rating="3.5"
+					    android:stepSize="0.1" />
+				    
+				</LinearLayout>
+			</LinearLayout>
+	    </LinearLayout>
+
+		<TextView
+			    android:background="@drawable/gradientrounded"
+			    android:id="@+id/tariffs"
+			    android:textColor="#000000"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="Тарифов не найдено"
+			    android:layout_marginLeft="7dp"
+		        android:layout_marginRight="7dp"
+		        android:layout_marginTop="7dp"
+		        android:paddingLeft="15dp"
+		        android:paddingTop="10dp"
+		        android:paddingBottom="10dp"
+		        android:paddingRight="15dp"
+			    android:textAppearance="?android:attr/textAppearanceSmall" />
+	    <TextView
+			    android:background="@drawable/gradientrounded"
+			    android:id="@+id/url"
+			    android:textColor="#000000"
+			    android:textStyle="bold"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="Тарифов не найдено"
+			    android:layout_marginLeft="7dp"
+		        android:layout_marginRight="7dp"
+		        android:layout_marginTop="7dp"
+		        android:paddingLeft="15dp"
+		        android:paddingTop="10dp"
+		        android:paddingBottom="10dp"
+		        android:paddingRight="15dp"
+			    android:textAppearance="?android:attr/textAppearanceSmall" />
+		<TextView
+			    android:background="@drawable/gradientrounded"
+			    android:id="@+id/email"
+			    android:textColor="#000000"
+			    android:textStyle="bold"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="Тарифов не найдено"
+			    android:layout_marginLeft="7dp"
+		        android:layout_marginRight="7dp"
+		        android:layout_marginTop="7dp"
+		        android:paddingLeft="15dp"
+		        android:paddingTop="10dp"
+		        android:paddingBottom="10dp"
+		        android:paddingRight="15dp"
+			    android:textAppearance="?android:attr/textAppearanceSmall" />
+		<TextView
+			    android:background="@drawable/gradientrounded"
+			    android:id="@+id/address"
+			    android:textColor="#000000"
+			    android:textStyle="bold"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="Тарифов не найдено"
+			    android:layout_marginLeft="7dp"
+		        android:layout_marginRight="7dp"
+		        android:layout_marginTop="7dp"
+		        android:paddingLeft="15dp"
+		        android:paddingTop="10dp"
+		        android:paddingBottom="10dp"
+		        android:paddingRight="15dp"
+			    android:textAppearance="?android:attr/textAppearanceSmall" />
+		
+</LinearLayout>
+</ScrollView>

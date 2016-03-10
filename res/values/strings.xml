@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VTaxi</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Вызов такси</string>
+    <string name="title_activity_taxi_profile">Профиль такси</string>
+    <string name="pick_city">Выберите город</string>
+    <string name="title_activity_feedbacks">Отзывы</string>
+    <string name="title_activity_add_feedback">Добавить отзывов</string>
+    <string name="title_activity_main2">Вызов такси</string>
+    <string name="pick_phone">выберите телефон</string>
+
+</resources>
